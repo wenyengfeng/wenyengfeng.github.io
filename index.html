@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wenyeng Feng</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            text-align: justify;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .research-item {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            flex-basis: calc(33.33% - 20px);
+        }
+
+        .teaching-item {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            flex-basis: calc(33.33% - 20px);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        button[type="submit"]:hover {
+            background -color: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .research-item,
+            .teaching-item {
+                flex-basis: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Wenyeng Feng</h1>
+        <nav>
+            <ul>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="research">Research</h2>
+        <div class="flex-container">
+            <div class="research-item">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="research-item">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="research-item">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="research-item">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="research-item">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="research-item">
+                <h3>Project 6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+        </div>
+
+        <h2 id="teaching">Teaching</h2>
+        <div class="flex-container">
+            <div class="teaching-item">
+                <h3>Course 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="teaching-item">
+                <h3>Course 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tort
+            </div>
+            <div class="teaching-item">
+                <h3>Course 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+        </div>
+        <h2 id="contact">Contact</h2>
+
+        <footer>
+            <p>&copy; 2023 Wenyeng Feng. All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
